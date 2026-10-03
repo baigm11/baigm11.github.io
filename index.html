@@ -136,14 +136,30 @@
     }
 
     /* Research interests */
-    .interest-list {
+    /* Research interests */
+    .interest-intro {
       margin: 0;
-      padding: 0;
-      list-style: none;
+      line-height: 1.5;
     }
-
+    
+    .interest-list {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0 0 0 1.2em;
+    }
+    
     .interest-list li {
-      margin: 4px 0;
+      position: relative;
+      padding-left: 1.4em;
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+    
+    .interest-list li::before {
+      content: "▷";
+      position: absolute;
+      left: 0;
+      top: 0;
     }
 
     /* Publications */
@@ -267,9 +283,17 @@
           <main>
             <section>
               <h2>Research Interests</h2>
+            
+              <p class="interest-intro">
+                Numerical methods and analysis for linear and nonlinear PDEs,
+                with a focus on:
+              </p>
+            
               <ul class="interest-list">
-                <li>Numerical methods and analysis for linear and nonlinear PDEs</li>
-                <li>Computational science</li>
+                <li>Geometric flows and complex biofluids</li>
+                <li>Free-boundary and interface problems</li>
+                <li>Two-phase and multiphase systems</li>
+                <li>Fluid&ndash;structure interactions</li>
               </ul>
             </section>
 
